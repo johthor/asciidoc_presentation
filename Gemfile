@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rubyzip', '1.2.1'
+gem 'rubyzip', '2.3.2'
 gem 'rake', '12.3.0'
 gem 'asciidoctor', '1.5.6'
 gem 'asciidoctor-revealjs', '2.0.1'
