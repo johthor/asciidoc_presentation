@@ -2,14 +2,14 @@ require './build-scripts/common'
 
 # PROJECT SETTINGS
 $project_name = 'Example Project'
-$author = 'Maurice Müller'
+$author = 'John Doe'
 $email = 'email@example.com'
 $project_version = 'v1.0'
 $theme = 'beige'
 
 # VERSIONS
-$revealjs_version = '3.6.0'
-$decktape_version = '2.6.1'
+$revealjs_version = '3.9.2'
+$decktape_version = '3.4.1'
 
 # DIRECTORIES
 $src_base = 'src'
@@ -41,6 +41,12 @@ $custom_attributes += " author=#{escapeString($author)}"
 $custom_attributes += " email=#{escapeString($email)}"
 $custom_attributes += " project_name=#{escapeString($project_name)}"
 $custom_attributes += " project_version=#{escapeString($project_version)}"
+
+# reveal.js config options
+$custom_attributes += " revealjs_hash=true"
+$custom_attributes += " revealjs_totalTime=2700" # 45 minutes * 60 seconds
+$custom_attributes += " figure-caption="
+
 
 # CODE
 # To add a custom language, use the following pattern:

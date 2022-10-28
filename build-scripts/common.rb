@@ -6,7 +6,7 @@ require 'zip'
 def download(url, path)
   puts('downloading ' + path)
   File.open(path, "w") do |f|
-    IO.copy_stream(open(url), f)
+    IO.copy_stream(URI.open(url), f)
   end
 end
 

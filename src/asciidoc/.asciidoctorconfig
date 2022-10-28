@@ -1,0 +1,6 @@
+:imagesdir: ../resources/images
+
+:docinfodir: {asciidoctorconfigdir}/.asciidoctor
+:docinfo: shared
+
+:icons: font

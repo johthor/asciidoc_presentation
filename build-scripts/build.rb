@@ -8,7 +8,7 @@ require 'asciidoctor-revealjs'
 require 'asciidoctor-diagram'
 
 def buildRevealJS
-  print "Building reveal.js...\n"
+  print "Building reveal.js as '#{$revealjs_out_file}' ...\n"
   FileUtils.mkpath $revealjs_out_dir
   FileUtils.copy_entry "lib/reveal.js-#{$revealjs_version}", "#{$revealjs_out_dir}/reveal.js"
   FileUtils.copy_entry "#{$image_dir}", "#{$revealjs_out_dir}/static"
